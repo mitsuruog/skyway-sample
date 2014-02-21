@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <title>Fixed Top Navbar Example for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]>
+  <script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script>
+  <![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    body {
+        margin-top: 60px;
+    }
+    </style>
+
+  <script src="assets/js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="https://skyway.io/dist/0.3/peer.js"></script>
+  <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+  <div class="pure-g">
+
+    <!-- Video area -->
+    <div class="pure-u-2-3 well well-lg" id="video-container">
+      <video id="their-video" autoplay class="img-rounded"></video>
+      <video id="my-video" muted="true" autoplay class="img-circle img-circle-min"></video>
+    </div>
+
+    <!-- Steps -->
+    <div class="pure-u-1-3">
+      <h2>SkyWay Video Chat</h2>
+
+      <!-- Get local audio/video stream -->
+      <div id="step1">
+        <p>カメラとマイクの利用を許可してください。</p>
+        <div id="step1-error">
+          <p>カメラまたはマイクにアクセスできません。ブラウザで利用が許可されているか確認して下さい。</p>
+          <a href="#" class="pure-button pure-button-error" id="step1-retry">メディアを再取得</a>
+        </div>
+      </div>
+
+      <!-- Make calls to others -->
+      <div id="step2">
+        <p>
+          Your Peerid:
+          <span id="my-id">...</span>
+        </p>
+        <h3>相手を呼び出す</h3>
+        <div class="pure-form">
+          <label for="contactlist">チャット可能なPeerID：</label>
+          <select id="contactlist" name="contact"></select>
+          <a href="#" class="pure-button pure-button-success btn btn-primary" id="make-call">Call</a>
+        </div>
+      </div>
+
+      <!-- Call in progress -->
+      <div id="step3">
+        <p>
+          接続先：
+          <span id="their-id">...</span>
+        </p>
+        <p>
+          <a href="#" class="pure-button pure-button-error btn btn-danger" id="end-call">チャットを終了する</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

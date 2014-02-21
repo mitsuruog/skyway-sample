@@ -1,0 +1,31 @@
+{
+  "name": "skyway-sample",
+  "version": "0.0.0",
+  "description": "skyway-sample =============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mitsuruog/skyway-sample.git"
+  },
+  "author": "mitsuruog <mitsuru.ogawa.jp@gmail.com> (http://blog.mitsuruog.info/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mitsuruog/skyway-sample/issues"
+  },
+  "homepage": "https://github.com/mitsuruog/skyway-sample",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-connect": "~0.6.0",
+    "grunt-open": "~0.2.2",
+    "load-grunt-tasks": "~0.2.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "connect-livereload": "~0.3.2"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

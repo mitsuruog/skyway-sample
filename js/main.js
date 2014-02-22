@@ -101,7 +101,7 @@ function init() {
         step2();
     });
 
-    $('.pure-h').hide();
+    $('.pure-u').hide();
     $('.pure-g').show();
 
 }

@@ -3,10 +3,11 @@
  */
 
 //APIキー
-//var APIKEY = 'd8267064-6c53-11e3-88fb-0bb014558bc5';
+//⬇️http://mitsuruog.github.io/skyway-sample only
+var APIKEY = 'd8267064-6c53-11e3-88fb-0bb014558bc5';
 
 //⬇️local host only
-var APIKEY = '6165842a-5c0d-11e3-b514-75d3313b9d05';
+//var APIKEY = '6165842a-5c0d-11e3-b514-75d3313b9d05';
 
 //ユーザーリスト
 var userList = [];
@@ -61,7 +62,7 @@ $(function() {
 
 
     $('.pure-g').hide();
-    
+
     // ステップ１実行
     step1();
 

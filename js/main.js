@@ -101,6 +101,7 @@ function init() {
         step2();
     });
 
+    $('.pure-h').hide();
     $('.pure-g').show();
 
 }
